@@ -1,0 +1,13 @@
+function onOpen(){
+  dollarYenConversion();
+}
+
+function dollarYenConversion() {
+  let sheet = SpreadsheetApp.getActiveSpreadsheet().getActiveSheet();
+  let rate = Number(sheet.getRange("M2").getValue());
+  let last = sheet.getLastRow();
+  let dollart = Number(sheet.getRange(last-1,4).getValue());
+  let dollard = Number(sheet.getRange(last-1,6).getValue());
+  sheet.getRange(last,4).setValue(dollart*rate);
+  sheet.getRange(last,6).setValue(dollard*rate);
+}
