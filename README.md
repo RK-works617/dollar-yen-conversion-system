@@ -2,8 +2,9 @@
 保有している米国株の取得価格と年間の配当額をドルから円に換算するシステム。
 
 ## 使用技術
-Google Sheets
-Google AppScript
+Google Sheets\
+Google AppScript\
+Google Finance
 
 ## 機能
 保有している米国株の一覧表シートを開くたび、保有している株の取得価格と年間の配当額（ドル建て）をGoogleFinanceで取得したドル円レートを参照して円換算し、表示する。
